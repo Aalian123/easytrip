@@ -1,0 +1,44 @@
+{
+  "changes_this_session": [],
+  "cwd": "/home/grayphite/easytrip",
+  "duration_minutes": 0,
+  "ended_at": "2026-10-17T17:46:57Z",
+  "event_seq": 4,
+  "fork_count": 0,
+  "git": {
+    "branch": "(no git)",
+    "last_commit": "none",
+    "uncommitted_changes": 0
+  },
+  "harness_mem": {
+    "healthy": true,
+    "last_checked": "2026-10-17T17:46:53Z",
+    "last_error": ""
+  },
+  "intent": "literal",
+  "last_event_id": "event-000004",
+  "last_message_hash": "607ad8849d128cec",
+  "last_message_length": 101,
+  "memory_logged": true,
+  "orchestration": {
+    "max_state_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "parent_session_id": null,
+  "plans": {
+    "completed_tasks": 0,
+    "exists": false,
+    "last_modified": 0,
+    "pending_tasks": 0,
+    "todo_tasks": 0,
+    "wip_tasks": 0
+  },
+  "project_name": "easytrip",
+  "prompt_seq": 3,
+  "resume_token": "resume-1792259213395181028",
+  "session_id": "session-1792259213395174309",
+  "started_at": "2026-10-17T17:46:53Z",
+  "state": "stopped",
+  "state_version": 1,
+  "updated_at": "2026-10-17T17:48:21Z"
+}

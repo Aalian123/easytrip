@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:16
+    container_name: easytrip-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: easytrip
+      POSTGRES_PASSWORD: easytrip
+      POSTGRES_DB: easytrip
+    ports:
+      - '5433:5432'
+    volumes:
+      - easytrip-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U easytrip -d easytrip']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:5
+    container_name: easytrip-adminer
+    restart: unless-stopped
+    ports:
+      - '8081:8080'
+    depends_on:
+      - db
+
+volumes:
+  easytrip-db:

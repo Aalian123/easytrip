@@ -1,0 +1,31 @@
+'use client';
+
+import { useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AuthProvider } from '@/lib/auth-context';
+import { SettingsProvider } from '@/lib/settings-context';
+import { ToastProvider } from '@/components/toast';
+import { FeatureProvider } from '@/lib/features-context';
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  const [client] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: { staleTime: 30_000, refetchOnWindowFocus: false, retry: 1 },
+        },
+      }),
+  );
+
+  return (
+    <QueryClientProvider client={client}>
+      <AuthProvider>
+        <SettingsProvider>
+          <FeatureProvider>
+            <ToastProvider>{children}</ToastProvider>
+          </FeatureProvider>
+        </SettingsProvider>
+      </AuthProvider>
+    </QueryClientProvider>
+  );
+}

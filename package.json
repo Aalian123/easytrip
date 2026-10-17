@@ -1,0 +1,30 @@
+{
+  "name": "easytrip",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @easytrip/shared build && pnpm --filter @easytrip/api build && pnpm --filter @easytrip/web build",
+    "dev": "pnpm --filter @easytrip/shared build && pnpm -r --parallel --filter @easytrip/api --filter @easytrip/web dev",
+    "dev:api": "pnpm --filter @easytrip/api dev",
+    "dev:web": "pnpm --filter @easytrip/web dev",
+    "db:migrate": "pnpm --filter @easytrip/api db:migrate",
+    "db:seed": "pnpm --filter @easytrip/api db:seed",
+    "db:reset": "pnpm --filter @easytrip/api db:reset",
+    "test": "pnpm -r test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "@prisma/client",
+      "prisma",
+      "@prisma/engines",
+      "argon2",
+      "@nestjs/core",
+      "sharp"
+    ]
+  }
+}

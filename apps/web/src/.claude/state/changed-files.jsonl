@@ -1,0 +1,11 @@
+{"file":"/home/grayphite/easytrip/apps/web/tailwind.config.ts","action":"Write","timestamp":"2026-09-10T08:56:18Z","important":false}
+{"file":"app/globals.css","action":"Write","timestamp":"2026-09-10T08:56:35Z","important":false}
+{"file":"components/ui/button.tsx","action":"Write","timestamp":"2026-09-10T08:56:52Z","important":false}
+{"file":"components/ui/badge.tsx","action":"Write","timestamp":"2026-09-10T08:56:58Z","important":false}
+{"file":"components/ui/card.tsx","action":"Write","timestamp":"2026-09-10T08:57:06Z","important":false}
+{"file":"components/ui/table.tsx","action":"Write","timestamp":"2026-09-10T08:57:14Z","important":false}
+{"file":"components/ui/input.tsx","action":"Write","timestamp":"2026-09-10T08:57:17Z","important":false}
+{"file":"app/login/page.tsx","action":"Write","timestamp":"2026-09-10T09:01:51Z","important":false}
+{"file":"components/facts.tsx","action":"Write","timestamp":"2026-09-10T09:02:11Z","important":false}
+{"file":"app/(app)/fleet/[id]/page.tsx","action":"Write","timestamp":"2026-09-10T09:03:05Z","important":false}
+{"file":"app/(app)/riders/[id]/page.tsx","action":"Write","timestamp":"2026-09-10T09:03:35Z","important":false}
