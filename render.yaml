@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: easytrip
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /login
+    envVars:
+      - key: SEED_ADMIN_EMAIL
+        value: admin@easytrip.com
+      # Admin login password — entered in the Render dashboard, not stored in git.
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true

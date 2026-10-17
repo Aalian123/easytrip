@@ -1,0 +1,11 @@
+**/node_modules
+**/dist
+**/.next
+**/*.tsbuildinfo
+**/.claude
+.idea
+.env
+.env.*
+*.log
+easytrip.zip
+coverage
